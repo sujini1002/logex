@@ -49,12 +49,14 @@
 
 
 		<!-- Logback --> 
-		<dependency>                                    
+		<dependency>   
+			<!-- jcl과 slf4j를 연결 -->                                 
 			<groupId>org.slf4j</groupId>                
 			<artifactId>jcl-over-slf4j</artifactId>     
 			<version>${jcloverslf4j.version}</version>  
 		</dependency>
 		<dependency>
+			<!-- slf4j를 구현한 logback 사용 -->
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>${logback.version}</version>
